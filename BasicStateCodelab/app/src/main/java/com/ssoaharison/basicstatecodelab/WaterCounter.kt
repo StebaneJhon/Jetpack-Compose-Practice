@@ -19,7 +19,13 @@ import com.ssoaharison.basicstatecodelab.ui.theme.BasicStateCodelabTheme
 fun StatefulCounter(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
         var count by rememberSaveable { mutableStateOf(0) }
-        StatelessCounter(count = count, {count++}, modifier)
+        StatelessCounter(
+            count = count,
+            {
+                count++
+            },
+            modifier
+        )
     }
 }
 
