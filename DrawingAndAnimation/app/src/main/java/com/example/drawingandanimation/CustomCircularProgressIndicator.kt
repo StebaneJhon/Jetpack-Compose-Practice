@@ -209,13 +209,11 @@ fun CustomCircularProgressIndicator(
 fun CustomCircularProgressIndicatorPreview() {
     CustomCircularProgressIndicator(
         modifier = Modifier.size(250.dp),
-        initialValue = 50,
+        initialValue = 10,
         primaryColor = Color.Blue,
         secondaryColor = Color.Gray,
         circleRadius = 230f,
-        onPositionChange = { position ->
-
-        }
+        onPositionChange = {}
     )
 
 }
